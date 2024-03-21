@@ -9,6 +9,8 @@ Este proyecto tiene como objetivo de crear tres (3) contratos inteligentes. El p
 
 ### Contrato 1: NFT_ERC-721.sol
 
+<img width="848" alt="Captura de pantalla 2024-03-21 a la(s) 00 07 39" src="https://github.com/Manriboy/IEBS-M7-S3/assets/156150473/77981de1-e5dc-42f8-b334-662d65b1278e">
+
 El primero contrato tiene como objetivo la creación del NFT estándar ERC-721 con el nombre de MomBreY_NFT (con la sigla MBY_NFT). Es un contrato de creación simple, pero con el objetivo de ocultar las estáfas, el contrato no permite crear un segundo NFT para la misma direccion (address) en menos de 1 hora
 
 <img width="422" alt="Captura de pantalla 2024-03-20 a la(s) 21 34 08" src="https://github.com/Manriboy/IEBS-M7-S3/assets/156150473/b95ea154-c1ca-4465-8919-91cb19da3071">
@@ -32,11 +34,15 @@ Y por último la función que, revisando que la última creación no haya sido h
 
 ### Contrato 2: SFT_ERC-1155.sol
 
+<img width="811" alt="Captura de pantalla 2024-03-21 a la(s) 00 08 09" src="https://github.com/Manriboy/IEBS-M7-S3/assets/156150473/a3f06827-1831-4c44-bb12-7e4aa7928593">
+
 Este segundo contrato es básicamente igual al primero, pero ahora con el estándar ERC-1155 y con un mínimo de 5 horas entre creación
 
 <img width="807" alt="Captura de pantalla 2024-03-20 a la(s) 21 43 21" src="https://github.com/Manriboy/IEBS-M7-S3/assets/156150473/bf93281c-5c5e-4c38-838c-17966b9b98e6">
 
 ### Contrato 3: SM_relacion.sol
+
+<img width="662" alt="Captura de pantalla 2024-03-21 a la(s) 00 08 45" src="https://github.com/Manriboy/IEBS-M7-S3/assets/156150473/e2c735b3-9a36-4931-871e-cb5c20c84060">
 
 Este último contrato se presenta el contrato que interactua con la creación de NFT ERC-721 del contrato MBY_NFT. Este requiera la address del contrato MBY_NFT para deployarse y una vez hecho esto tiene una sola función con el nombre de Envia_NFT. Esta segunda función nos pide un address para enviar un token NFT a la misma. Como el contrato 1 tiene restricción para crear NFT, este último contrato no podrá enviar NFT a la misma dirección en un periodo menor a 1 hora entre envío y envío
 
